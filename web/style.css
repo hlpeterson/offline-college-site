@@ -1,0 +1,413 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.head-div {
+    background-color: rgba(0, 0, 0, .6);
+    background-image: url(images-/grad.jpg);
+    background-blend-mode: multiply; 
+    background-size: cover;
+    height: 500px;
+}
+
+div h1, div p, div h2 {
+    color: white; 
+    text-align: center;
+}
+
+.head-div h1 {
+    padding-top: 150px;
+}
+
+.head-div p {
+    padding: 50px;
+}
+
+.nav li {
+    display: inline-block; 
+    padding-left: 60px;
+    padding-right: 60px;
+
+}
+
+.nav {
+    background-color: rgba(50, 250, 100, .2);
+    text-align: center;
+}
+
+.top-nav {
+    /*margin-top: -17px; margin-bottom: 40px; */
+    margin-bottom: -20px;
+    padding: 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    color:rgb(95, 93, 93);
+}
+
+.nav a:hover {
+    background-color: rgba(200, 200, 200, .3);
+    padding: 10px 20px;
+}
+
+span {
+    display: inline-block;
+}
+
+.other-pages {
+    width: 400px;
+    padding-left: 200px;
+    text-align: center;
+}
+
+.light-gray {
+    background-color: lightslategray;
+}
+
+.schools-top-div {
+    background-image: url(images-/search.jpg);
+}
+
+.top-text {
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+}
+
+.school-attributes {
+    display: block; 
+    font-size: 25px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.input-label {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.input-search {
+    display: block;
+    width: 1600px;
+    height: 100px;
+    font-size: 40px;
+}
+
+.attributes-span {
+    outline: 2px solid black;
+    width: 700px;
+    height: 600px;
+}
+
+.attributes-span-1 {
+    margin-left: 20px;
+}
+
+.info-span {
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 200px;
+}
+
+.majors-span {
+    margin-left: 0; 
+    margin-right: 0;
+} 
+
+.university-name {
+    text-align: center; 
+    font-size: 30px;
+    margin-top: 200px;
+}
+
+.button-div {
+    width: 2000px;
+    background-color: lightslategray;
+}
+
+.bottom-nav {
+    margin-top: 0px;
+    padding: 15px;
+    background-color: lightslategray;
+    height: 200px;
+}
+
+.bottom-nav-help {
+    margin-top: -17px;
+}
+
+.bottom-links {
+    vertical-align: center;
+    font-size: 30px;
+    color: white;
+    padding: 0 5%;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.facts-span {
+    background-color: rgba(204, 255, 204, .2); 
+    margin-bottom: 20px;
+}
+
+.university-name {
+    margin-top: 125px;
+    margin-bottom: 50px;
+    outline: solid rgba(0, 0, 0, .6) 1px;
+    height: 100px;
+    padding-top: 30px;
+}
+
+.fit-top-div {
+    background-image: url(images-/caps.jpg);
+}
+
+.top-div {
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply; 
+    background-size: cover;
+    outline: 2px solid black;
+    background-position: center;
+    height: 500px;
+}
+
+.fit-title {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-size: 40px;
+}
+
+.info-heading {
+    font-size: 35px;
+    text-align: center;
+    color: black;
+    outline: lightseagreen solid 1px;
+    padding-top: 30px;
+    padding-bottom: 30px; 
+    background-color: white;
+}
+
+.questions {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.q-and-a {
+     margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    height: 200px;
+    background-color: white;
+    outline: lightseagreen solid 1px;
+    
+}
+
+.fit-inputs {
+    height: 100px;
+    width: 1450px;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.lifestyle-q, .size-q {
+    padding-top: 50px;
+}
+
+.urban-question, .rural-question, .size-five, .size-ten, .size-twenty, .size-fourty, .size-over {
+    padding-right: 30px; 
+    padding-left: 30px;
+}
+
+.question-form {
+    background-color: rgba(192, 192, 192, .2);
+}
+
+.fit-subtitle {
+    margin-top: 30px; 
+    margin-bottom: 50px;
+}
+
+.submit-button-div {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.submit-button {
+    display: block;
+    margin: 50px auto;
+    height: 150px;
+    width: 300px;
+    font-size: 30px;
+}
+
+.bottom-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.help-top-div {
+    background-image: url(images-/desk.jpg);
+}
+
+.schools-title {
+    font-size: 50px;
+}
+
+.college-image {
+    height: 200px;
+    width: 200px;
+}
+
+.college-span-closed, .college-span-open {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 1300px;
+}
+
+.college-span-open {
+    max-height: fit-content;
+}
+
+.college-span-closed {
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.fit-results-header {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+
+.college-type-header {
+    text-align: center;
+    font-size: 20px;
+}
+
+.resource-image {
+    width: 200px;
+    height: 200px;
+}
+
+.links-span {
+    width: 400px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.khan-image {
+    width: 300px;
+}
+
+.help-bottom-links {
+    margin-left: 70px;
+    margin-right: 70px; 
+}
+/*Grid layout borrowed from Kevin Powell's YouTube video "Flexbox design patterns you can use in your projects" at https://www.youtube.com/watch?v=vQAvjof1oe4&t=493s*/
+.grid {
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.col {
+    background-color:rgba(95, 93, 93, .2);
+    border: solid black 1px;
+    height: 550px;
+}
+
+.grid > * {
+    flex: 1 1 25em;
+}
+
+.col h4 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.search-results {
+    font-size: 30px;
+}
+
+.control-div-closed {
+    max-height: 1000px;
+    overflow: hidden; 
+}
+
+.control-div-open {
+    max-height: 3000px; 
+}
+
+.fit-control-div-closed {
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.fit-control-div-open {
+    max-height: 4000px;
+}
+
+.sat-error {
+    color: black;
+}
+
+.fit-results-divider-on {
+    height: 5px;
+    border: blue solid 3px;
+    background-color: cadetblue;
+}
+
+.fit-results-divider-off {
+    height: 0px;
+    border: none; 
+}
+
+.resources-button {
+    height: 100px; 
+    text-align: center;
+    background-color: rgba(75, 83, 190, 0.2); 
+}
+
+.help-links-div {
+    background-color: rgba(95, 93, 93, .2);
+}
+
+.resources-button:hover {
+    cursor: pointer;
+}
+
+.deadlines-top-div {
+    background-image: url(images-/deadlines.jpg);
+}
+
+.timeline-div {
+    text-decoration: underline;
+    color: black;
+}
+
+.deadlines-div {
+    text-align: center;
+}
+
+.dates-div {
+    outline: 3px aliceblue solid;
+}
+
+.deadlines-body {
+    background-color: rgba(209, 168, 175, .3);
+}

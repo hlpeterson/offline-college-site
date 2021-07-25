@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Match Schools</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="fit-top-div top-div">
+      <h1 class="fit-header fit-title">Find Your Fit</h1>
+      <h2 class="fit-header fit-subtitle">
+        With our personal recommendation system backed by trusted College
+        Scorecard data, we can help you figure out which schools may be right
+        for you
+      </h2>
+    </div>
+    <div class="question-form" id="question-form">
+      <p id="fit_paragraph" class="info-heading">
+        Please fill out the information below:
+      </p>
+      <h4 class="q-and-a blue-outline">
+        <label for="GPAs" class="questions"
+          >What state/territory would you like to search for schools in?</label
+        >
+        <select name="GPAs" class="questions fit-inputs" id="state-input">
+          <option value="AL">Alabama</option>
+          <option value="AK">Alaska</option>
+          <option value="AS">American Samoa</option>
+          <option value="AZ">Arizona</option>
+          <option value="AR">Arkansas</option>
+          <option value="CA">California</option>
+          <option value="CO">Colorado</option>
+          <option value="CT">Connecticut</option>
+          <option value="DE">Delaware</option>
+          <option value="DC">District of Columbia</option>
+          <option value="FL">Florida</option>
+          <option value="GA">Georgia</option>
+          <option value="GU">Guam</option>
+          <option value="HI">Hawaii</option>
+          <option value="ID">Idaho</option>
+          <option value="IL">Illinois</option>
+          <option value="IN">Indiana</option>
+          <option value="IA">Iowa</option>
+          <option value="KS">Kansas</option>
+          <option value="KY">Kentucky</option>
+          <option value="LA">Louisiana</option>
+          <option value="ME">Maine</option>
+          <option value="MD">Maryland</option>
+          <option value="MA">Massachusetts</option>
+          <option value="MI">Michigan</option>
+          <option value="MN">Minnesota</option>
+          <option value="MS">Mississippi</option>
+          <option value="MO">Missouri</option>
+          <option value="MT">Montana</option>
+          <option value="NV">Nebraska</option>
+          <option value="NE">Nevada</option>
+          <option value="NH">New Hampshire</option>
+          <option value="NJ">New Jersey</option>
+          <option value="NM">New Mexico</option>
+          <option value="NY">New York</option>
+          <option value="NC">North Carolina</option>
+          <option value="ND">North Dakota</option>
+          <option value="OH">Ohio</option>
+          <option value="OK">Oklahoma</option>
+          <option value="OR">Oregon</option>
+          <option value="PA">Pennsylvania</option>
+          <option value="PR">Puerto Rico</option>
+          <option value="RI">Rhode Island</option>
+          <option value="SC">South Carolina</option>
+          <option value="SD">South Dakota</option>
+          <option value="TN">Tennessee</option>
+          <option value="TX">Texas</option>
+          <option value="UT">Utah</option>
+          <option value="VT">Vermont</option>
+          <option value="VA">Virgin Islands</option>
+          <option value="VI">Virginia</option>
+          <option value="WA">Washington</option>
+          <option value="WV">West Virginia</option>
+          <option value="WI">Wisconsin</option>
+          <option value="WY">Wyoming</option>
+        </select>
+      </h4>
+      <h4 class="q-and-a salmon-outline">
+        <label for="SATs" class="questions">What is your SAT score?</label>
+        <input
+          type="number"
+          name="SATs"
+          class="questions fit-inputs sat-inputs"
+          min="400"
+          max="1600"
+          step="10"
+          id="sat-input"
+        />
+      </h4>
+      <h4 class="q-and-a salmon-outline">
+        <label for="size_option" class="questions"
+          >What size would you prefer your student body to be?</label
+        >
+        <select name="size_option" class="questions fit-inputs" id="size-input">
+          <option value="Very Small">Very Small</option>
+          <option value="Small">Small</option>
+          <option value="Average">Average</option>
+          <option value="Large">Large</option>
+          <option value="Very Large">Very Large</option>
+        </select>
+      </h4>
+      <div class="submit-button-div">
+        <button class="submit-button" id="fit-submit-button">Submit</button>
+        <h2 id="sat-error"></h2>
+      </div>
+      <div class="fit-control-div-closed" id="fit-control-div">
+        <h3 class="fit-results-header" id="result-header">
+          Based on the information you have provided, our algorithm has
+          generated potential school(s) that may be worth looking into below
+        </h3>
+        <div>
+          <div>
+            <div class="college-span-closed" id="college-span-1">
+              <h4 id="fit-school-result-1">University Name Here</h4>
+              <h5 id="fit-enrollment-1">Undergraduate Enrollment:</h5>
+              <h5 id="fit-sat-1">Average SAT Score:</h5>
+              <a href="" id="fit-link-1"
+                >Click here to learn more from the University's website</a
+              >
+            </div>
+            <span
+              class="fit-results-divider-off"
+              id="fit-results-divider-1"
+            ></span>
+            <div class="college-span-closed" id="college-span-2">
+              <h4 id="fit-school-result-2">University Name Here</h4>
+              <h5 id="fit-enrollment-2">Undergraduate Enrollment:</h5>
+              <h5 id="fit-sat-2">Average SAT Score:</h5>
+              <a href="" id="fit-link-2"
+                >Click here to learn more from the University's website</a
+              >
+            </div>
+            <span
+              class="fit-results-divider-off"
+              id="fit-results-divider-2"
+            ></span>
+            <div class="college-span-closed" id="college-span-3">
+              <h4 id="fit-school-result-3">University Name Here</h4>
+              <h5 id="fit-enrollment-3">Undergraduate Enrollment:</h5>
+              <h5 id="fit-sat-3">Average SAT Score:</h5>
+              <a href="" id="fit-link-3"
+                >Click here to learn more from the University's website</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript">
+      let python_school = "";
+      let python_class = "";
+      let school_1 = "";
+      let school_2 = "";
+      let school_3 = "";
+
+      let control_div = document.getElementById("fit-control-div");
+      document.getElementById("fit-submit-button").onclick = function () {
+        clear_page(1); 
+        clear_page(2); 
+        clear_page(3); 
+        control_div.className = "fit-control-div-closed"; 
+        document.getElementById("fit-results-divider-1").className =
+              ".fit-results-divider-on";
+        document.getElementById("fit-results-divider-2").className =
+              ".fit-results-divider-on";
+        const state_input = document.getElementById("state-input");
+        const final_state_input =
+          state_input.options[state_input.selectedIndex].value;
+        const sat_input = document.getElementById("sat-input").value;
+        const size_input = document.getElementById("size-input");
+        const final_size_input =
+          size_input.options[size_input.selectedIndex].value;
+        if (
+          parseInt(sat_input) % 10 == 0 ||
+          parseInt(sat_input) < 400 ||
+          parseInt(sat_input) > 1600
+        ) {
+          console.log(
+            final_state_input + " " + final_size_input + " " + sat_input
+          );
+          eel.recommend(
+            final_state_input,
+            sat_input,
+            final_size_input,
+            "Safety"
+          );
+          eel.recommend(
+            final_state_input,
+            sat_input,
+            final_size_input,
+            "Target"
+          );
+          eel.recommend(
+            final_state_input,
+            sat_input,
+            final_size_input,
+            "Reach"
+          );
+        } else {
+          document.getElementById("sat-error").innerHTML =
+            "Error: You have input an invalid SAT score.";
+        }
+      };
+      eel.expose(take_prediction);
+      function take_prediction(prediction, classification) {
+        python_school = prediction;
+        python_class = classification;
+        if (classification == "Safety") {
+          school_1 = python_school;
+        } else if (classification == "Target") {
+          school_2 = python_school;
+        } else {
+          school_3 = python_school;
+        }
+        displayToScreen(python_school, python_class);
+      }
+
+      eel.expose(displayToScreen);
+      async function displayToScreen(school, classification) {
+        const api_url = `https://api.data.gov/ed/collegescorecard/v1/schools?school.name=${school.substring(2, school.length - 2)}&api_key=${my_key}`;
+        const response = await fetch(api_url);
+        const data = await response.json();
+        console.log(school);
+        console.log("school 1: " + school_1);
+        console.log("school 2: " + school_2);
+        console.log("school 3: " + school_3); 
+        if (classification === "Safety") {
+          document.getElementById("college-span-1").className =
+            "college-span-open";
+          document.getElementById("fit-school-result-1").innerHTML = school.substring(2, school.length - 2);
+          document.getElementById("fit-enrollment-1").innerHTML =
+            "Undergraduate Population: " + data.results[0].latest.student.size;
+          let safety_sat_scores =
+            data.results[0].latest.admissions.sat_scores.average.overall;
+          if (safety_sat_scores != null) {
+            document.getElementById("fit-sat-1").innerHTML =
+              "Average SAT score: " +
+              data.results[0].latest.admissions.sat_scores.average.overall;
+          } else {
+            document.getElementById("fit-sat-1").innerHTML = "Average SAT score: N/A";
+          }
+          document.getElementById("fit-link-1").href =
+            data.results[0].school.school_url;
+        } else if (classification == "Target") {
+          if (school != school_1) {
+            document.getElementById("college-span-2").className =
+              "college-span-open";
+            document.getElementById("fit-school-result-2").innerHTML = school.substring(2, school.length - 2);
+            document.getElementById("fit-enrollment-2").innerHTML =
+              "Undergraduate Population: " +
+              data.results[0].latest.student.size;
+            let target_sat_scores =
+              data.results[0].latest.admissions.sat_scores.average.overall;
+            if (target_sat_scores != null) {
+              document.getElementById("fit-sat-2").innerHTML =
+                "Average SAT score: " +
+                data.results[0].latest.admissions.sat_scores.average.overall;
+            } else {
+              document.getElementById("fit-sat-2").innerHTML = "Average SAT score: N/A";
+            }
+            document.getElementById("fit-link-2").href =
+              data.results[0].school.school_url;
+            document.getElementById("fit-results-divider-1").className =
+              ".fit-results-divider-on";
+          }
+        } else {
+          if (school != school_1 && school != school_2) {
+            console.log("logic worked")
+            document.getElementById("college-span-3").className =
+              "college-span-open";
+            document.getElementById("fit-school-result-3").innerHTML = school.substring(2, school.length - 2);
+            document.getElementById("fit-enrollment-3").innerHTML =
+              "Undergraduate Population: " +
+              data.results[0].latest.student.size;
+            let reach_sat_scores =
+              data.results[0].latest.admissions.sat_scores.average.overall;
+            if (reach_sat_scores != null) {
+              document.getElementById("fit-sat-3").innerHTML =
+                "Average SAT score: " +
+                data.results[0].latest.admissions.sat_scores.average.overall;
+            } else {
+              document.getElementById("fit-sat-3").innerHTML = "Average SAT score: N/A";
+            }
+            document.getElementById("fit-link-3").href =
+              data.results[0].school.school_url;
+            document.getElementById("fit-results-divider-2").className =
+              ".fit-results-divider-on";
+          }
+          control_div.className = "fit-control-div-open";
+        }
+      }
+      function clear_page(num) {
+        document.getElementById("fit-school-result-" + num).innerHTML = ""; 
+        document.getElementById("fit-enrollment-" + num).innerHTML = ""; 
+        document.getElementById("fit-sat-" + num).innerHTML = "";
+        document.getElementById("fit-link-" + num).href = "";
+        document.getElementById("college-span-" + num).className = "college-span-closed";
+      }
+    </script>
+  </body>
+  <footer>
+    <nav class="bottom-nav">
+      <ul>
+        <li class="bottom-links">
+          <a href="#question-form">Update Information</a>
+        </li>
+        <li class="bottom-links">
+          <a href="schools.html">Search For Schools</a>
+        </li>
+        <li class="bottom-links"><a href="help.html">Explore Resources</a></li>
+        <li class="bottom-links"><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+  </footer>
+</html>
