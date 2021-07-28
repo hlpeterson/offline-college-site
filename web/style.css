@@ -319,7 +319,7 @@ span {
     margin-left: 70px;
     margin-right: 70px; 
 }
-/*Grid layout borrowed from Kevin Powell's YouTube video "Flexbox design patterns you can use in your projects" at https://www.youtube.com/watch?v=vQAvjof1oe4&t=493s*/
+
 .grid {
     display: flex; 
     flex-wrap: wrap;
