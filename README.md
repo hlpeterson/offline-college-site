@@ -11,6 +11,8 @@ This page provides users with a timeline comprised of several of the most import
 
 Note - This project is still in the early development stages, and there are still many features/functionalities that I hope to add. Currently, I am working on improving the functionality of the Find My Fit page in order to ensure that results that are appropriate for the user are displayed accurately and reliably onto the webpage.
 ## Acknowledgments 
--Code for the grid layout in the "schools.html" was found in Kevin Powell's YouTube video "Flexbox design patterns you can use in your projects" at https://www.youtube.com/watch?v=vQAvjof1oe4&t=493s 
--The API/Database that is used to gather the information about colleges is the College Scorecard API. Link to API: https://collegescorecard.ed.gov/data/
--This application uses the EEL python library by Chris Knott in order to facilitate communication between the Python componet and the Javascript component. A link to the documentation for this library can be found at: https://github.com/ChrisKnott/Eel 
+Code for the grid layout in the "schools.html" was found in Kevin Powell's YouTube video [Flexbox design patterns you can use in your projects](https://www.youtube.com/watch?v=vQAvjof1oe4&t=493s). 
+
+The API/Database that is used to gather the information about colleges is the [College Scorecard API](https://collegescorecard.ed.gov/data/).
+
+This application uses the [EEL python library](https://github.com/ChrisKnott/Eel) by Chris Knott in order to facilitate communication between the Python componet and the Javascript component.  
